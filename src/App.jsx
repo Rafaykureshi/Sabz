@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <h1>Muhib colab</h1>
+      <h1>Muhib colab is on</h1>
       <Router>
       <Navbar />
         <Routes>
