@@ -11,7 +11,6 @@ function App() {
 
   return (
     <>
-    <h1>ohio</h1>
       <Router>
       <Navbar />
         <Routes>
