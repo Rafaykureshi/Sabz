@@ -11,6 +11,7 @@ function App() {
 
   return (
     <>
+      <h1>Muhib</h1>
       <Router>
       <Navbar />
         <Routes>
