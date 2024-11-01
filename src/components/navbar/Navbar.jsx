@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import Contact from '../contact/Contact'
-import Store from '../Store/Store'
-import learn from '../learn/Learn'
-import Home from '../home/Home'
-import Logo from '../../assets/images/sabz.png'
+import image from "../../assets/images/logo3.PNG"
+
+// import Logo from ""
 
 const Navbar = () => {
   return (
@@ -21,7 +19,7 @@ const Navbar = () => {
       <li className="nav-item">
         <Link className="nav-link" to='/learn'>Learn</Link>
       </li>
-      <img src={Logo}/>
+      <img src={image}/>
       <li className="nav-item">
         <Link className="nav-link" to='/store'>Store</Link>
       </li>
