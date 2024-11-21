@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-dark text-white;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-md;
+  }
+
+  .mobile-nav {
+    @apply fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-2 px-4 flex justify-around items-center md:hidden;
+  }
+
+  .mobile-nav-item {
+    @apply flex flex-col items-center gap-1 text-gray-600 hover:text-primary;
+  }
+
+  .mobile-nav-item.active {
+    @apply text-primary;
+  }
+
+  .touch-feedback {
+    @apply active:scale-95 transition-transform;
+  }
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+
+  .btn {
+    @apply w-full justify-center;
+  }
+
+  .card {
+    @apply rounded-lg shadow-sm;
+  }
+}
+
+/* Improved touch targets for mobile */
+@media (max-width: 640px) {
+  button, 
+  a, 
+  input, 
+  select, 
+  textarea {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  .touch-target {
+    @apply p-3;
+  }
+}
